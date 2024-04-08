@@ -1,0 +1,294 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Rock Salt";
+    src: url(../fonts/RockSalt-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 800;
+}
+
+section,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/* 600 px: Small */
+
+.hero {
+    color: #DF8480;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/dalmatiner_background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 100vw;
+    text-align: center;
+    font-family: "Rock Salt";
+    font-size: 24px;
+    padding-top: 5vh;
+    background-color: transparent;
+    color: black;
+}
+
+.hero-image {
+    width: 100vw;
+    text-align: right;
+    padding: 5vh 5vh 0 60vw;
+}
+
+.pink {
+    display: hidden;
+}
+
+/* how_it_works */
+
+.how_it_works {
+    gap: 2vh;
+    margin-bottom: 5vh;
+}
+
+.how_it_works p,
+.menu p:last-of-type {
+    padding: 0 10vw 0 10vw;
+}
+
+.section_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    background-color: #DF8480;
+}
+
+.number {
+    text-align: center;
+    color: #DF8480;
+    font-size: 3rem;
+}
+
+.text {
+    text-align: center;
+}
+
+/* Menu Section */
+
+.menu {
+    margin-bottom: 5vh;
+}
+
+.dog {
+    height: 20vh;
+    width: 100vw;
+    background-image: url(../images/dog_food.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.food {
+    background-image: url(../images/food.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    margin: 5vh 20vw 2vh 20vw;
+    height: 200px;
+}
+
+.food p {
+    height: auto;
+}
+
+.food p:nth-of-type(2) {
+    text-align: right;
+}
+
+.food p:nth-of-type(3) {
+    text-align: left;
+}
+
+.menu p:last-of-type {
+    text-align: center;
+
+}
+
+/* Signup & Footer */
+
+.signup {
+    gap: 20px;
+    padding: 5vh 10vw 5vh 10vw;
+}
+
+button {
+    width: 80vw;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+}
+
+.sign {
+    background-color: #DF8480;
+    color: white;
+} 
+
+.sign:hover {
+    background-color: #bc736f;
+}
+
+footer,
+.signup {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+footer div:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20vw;
+}
+
+footer img {
+    width: 40px;
+}
+
+footer p {
+    margin: 20px 0;
+}
+
+
+/* 601 px - 900 px: Medium Tablet */
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .number {
+        text-align: left;
+    }
+    
+    .text {
+        text-align: left;
+    }
+
+    .steps .text {
+        padding: 0;
+    }
+
+    .steps {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0 10vw 0 10vw;
+    }
+
+    .menu_wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .dog {
+        width: 50vw;  
+        height: 250px;       
+    }
+
+    .food {    
+        width: 50vw;
+        height: 250px;
+        margin: 0;
+    }
+
+    .food p {  
+        padding: 5vh;
+    }
+
+    .menu p:last-of-type {
+        margin-top: 5vh;;
+    }
+}
+
+
+@media only screen and (min-width: 901px)  {
+
+    .logo {
+        background-color: white;
+        padding: 2vw 0;
+
+    }
+
+    .hero {
+        background-image: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .hero div:first-of-type {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        
+    }
+
+    .hero-image {
+        width: 50vw;
+        height: 100vh;
+        background-image: url(../images/dalmatiner_background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
+    }
+
+    hero-image h2 {
+        width: 50vw;
+        height: auto;
+        padding: 5vh;
+        text-align: end;
+
+    }
+
+    .pink {
+        display: visible;
+        width: 50vw;
+        height: 100vh;
+        background-color: #DF8480;
+    }
+}
