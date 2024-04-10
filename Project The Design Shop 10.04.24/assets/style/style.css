@@ -14,6 +14,13 @@ a {
     color: black;
 }
 
+.product_left:hover, 
+.product_center:hover,
+.product_right:hover,
+.hero_image:hover  {
+    opacity: 0.5;
+}
+
 header {
     text-transform: uppercase;
     font-weight: 700;
@@ -53,8 +60,10 @@ section {
     display: grid;
 }
 
+
+
 .hero {
-    height: 80vh;
+    height: 95vh;
     width: auto;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 11fr 1fr;
